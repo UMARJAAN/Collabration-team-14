@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 400px;
+            margin:auto;
+            text-align: center;
+            background-color: rgb(46, 232, 170) ;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,80px);
+            gap: 10px;
+            padding: 50px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #box > div{
+            font-size: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+        h2{
+            color: white;
+            font-size: 40px;
+            margin-top:-10px;
+        }
+        .col{
+            background-color: white;
+            color: gray;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding:20px;
+        }
+        .col2{
+            background-color: teal;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h2>- Visitor -</h2>
+        <div class="col">Full Name</div>
+        <div class="col">Email</div>
+        <div class="col">Organization</div>
+        <div class="col2">SIGN UP</div>
+        <div class="col2">RETURN</div>
+    </div>
+</body>
+</html>
